@@ -3,19 +3,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333;
 }
 
 header.custom-header {
-  background-color: #000; /* Latar belakang hitam */
-}
-
-header.custom-header h1 {
-  margin: 0;
+  background-color: #333;
+  color: #fff;
 }
 
 nav .nav-link {
-  color: #fff; /* Teks putih */
+  color: #fff;
 }
 
 section {
@@ -36,7 +32,20 @@ footer {
   width: 100%;
 }
 
-/* Tambahan gaya opsional untuk card */
+.btn-success {
+  background-color: #25D366; /* Warna hijau WhatsApp */
+  border-color: #25D366;
+}
+
+.btn-success:hover {
+  background-color: #1ebe56;
+  border-color: #1ebe56;
+}
+
 .card {
   border-radius: 8px;
+}
+
+.card-body {
+  padding: 1.5em;
 }

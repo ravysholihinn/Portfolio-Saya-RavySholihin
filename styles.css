@@ -1,41 +1,101 @@
-/* Gaya untuk header */
-.custom-header {
-  background-color: #343a40;
+/* styles.css */
+
+/* Styling umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
   color: #fff;
   padding: 1rem 0;
 }
 
-.custom-header h1 {
+header h1 {
+  text-align: center;
   margin: 0;
 }
 
-/* Gaya untuk card */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+/* Styling untuk card sertifikat */
 .card {
-  border: none;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 .card-img-top {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
 }
 
-.card-img-top:hover {
-  transform: scale(1.05);
+.card-body {
+  padding: 1rem;
 }
 
-/* Gaya untuk modal */
-.modal-dialog {
-  max-width: 80%;
+.card-title {
+  font-size: 1.25rem;
 }
 
+.card-text {
+  font-size: 1rem;
+}
+
+/* Styling untuk modal */
 .modal-content {
-  background-color: #f8f9fa;
+  border-radius: 0.5rem;
 }
 
 .modal-header {
-  border-bottom: none;
+  border-bottom: 1px solid #ddd;
 }
 
-.modal-footer {
-  border-top: none;
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  font-size: 1.5rem;
+}
+
+/* Styling footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
 }

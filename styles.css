@@ -1,20 +1,24 @@
+/* Gaya Umum */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #007bff;
+  background-color: #007bff; /* Warna biru */
+  color: #fff;
+  padding: 1.5rem 0;
 }
 
 header h1 {
   margin: 0;
 }
 
+/* Navigasi */
 nav ul {
   padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -26,59 +30,54 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-section {
-  margin-bottom: 30px;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
+/* Card */
 .card {
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .card-img-top {
-  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .card-body {
-  background-color: #fff;
+  padding: 1.25rem;
 }
 
-.card-title {
-  font-size: 1.2em;
+/* Gaya Bagian */
+h2 {
+  color: #007bff; /* Warna biru */
 }
 
+/* Gaya Modal */
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
 footer {
-  background-color: #343a40;
+  background-color: #343a40; /* Warna abu-abu gelap */
+  color: #fff;
+  padding: 1rem 0;
 }
 
-footer p {
-  margin: 0;
-}
-
-.certification img {
-  cursor: pointer;
-}
-
-.bg-primary {
-  background-color: #007bff !important;
-}
-
-.text-white {
-  color: #fff !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.py-4 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-.border-primary {
-  border-color: #007bff !important;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-item {
+    display: block;
+    margin: 10px 0;
+  }
 }

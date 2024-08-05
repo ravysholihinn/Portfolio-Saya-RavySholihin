@@ -1,66 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 .custom-header {
-    background-color: #333;
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.custom-header h1 {
+  margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-link {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 main {
-    padding: 2em;
+  padding: 2em;
 }
 
 h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 0.5em;
-    margin-top: 0;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5em;
+  margin-top: 0;
 }
 
 section {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .card-img-top {
-    height: 180px; /* Atur tinggi gambar */
-    object-fit: cover; /* Pastikan gambar menutupi area card dengan baik */
+  max-height: 200px;
+  object-fit: cover;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }

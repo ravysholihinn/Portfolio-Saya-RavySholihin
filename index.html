@@ -10,52 +10,91 @@
 </head>
 <body>
   <header>
-    <h1>Portofolio Ravy Sholihin</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Tentang Saya</a></li>
-        <li><a href="#education">Pendidikan</a></li>
-        <li><a href="#experience">Pengalaman</a></li>
-        <li><a href="#certificates">Sertifikat</a></li>
-        <li><a href="#skills">Keterampilan</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Portofolio Ravy Sholihin</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Keterampilan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
   <main>
-    <section id="about">
+    <section id="about" class="container">
       <h2>Tentang Saya</h2>
       <p>Nama: Ravy Sholihin<br>
          Kontak: +62812 9397 2566 | ravy.teknik@gmail.com<br>
          Alamat: Jl. Suka karya perumahan graha bangun permai, blok A. No.16, Kota Pekanbaru<br>
          Saya lulusan dari Perguruan Tinggi (d.h STMIK Amik Riau) Universitas Sains dan Teknologi Indonesia Pekanbaru pada Program Studi Sarjana Teknik Informatika dan mendapatkan predikat sangat memuaskan dengan IPK 3.55. Saya selalu berusaha untuk berkembang dalam hal pekerjaan, saya adalah pribadi yang memiliki integritas tinggi dan mempunyai keterampilan dalam hal yang berhubungan dengan IT dan saya mampu menangani perbaikan komputer dan laptop dari segi software dan hardware.</p>
     </section>
-    <section id="education">
+
+    <section id="education" class="container">
       <h2>Riwayat Pendidikan</h2>
       <p>d.h STMIK AMIK RIAU/UNIVERSITAS SAINS TEKNOLOGI INDONESIA<br>
          2019-2024<br>
          Teknik Informatika – IPK 3,55</p>
     </section>
-    <section id="experience">
+
+    <section id="experience" class="container">
       <h2>Pengalaman Magang/Kerja</h2>
-      <p>PT. Surya Karsa Mediaformasindo at PT. Chevron Pacific Indonesia<br>
-         September 2017 - Desember 2017<br>
-         - Bertanggung jawab dalam hal menginstalasi dan troubleshooting Telnet dan fiber optik<br>
-         - Merekap data operasional perusahaan</p>
-      <p>PT. Educa Sisfomedia Indonesia<br>
-         Juli 2022 – Januari 2023<br>
-         - Developer Desain Front end programming mendesain rancangan website dengan responsif untuk mobile dan desktop<br>
-         - Menyelesaikan Project Desain Café RR Delima Pekanbaru</p>
-      <p>Andre Ponsel (Kerja)<br>
-         Agustus 2023 – September 2023<br>
-         - Perbaikan Mesin HP<br>
-         - Perbaikan LCD Handphone<br>
-         - Menginstalasi Handphone Android Yang Hank</p>
-      <p>Toko Komputer Wincent<br>
-         - Perbaikan laptop dan komputer<br>
-         - Service printer</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">PT. Surya Karsa Mediaformasindo at PT. Chevron Pacific Indonesia</h5>
+          <p class="card-text">September 2017 - Desember 2017<br>
+             - Bertanggung jawab dalam hal menginstalasi dan troubleshooting Telnet dan fiber optik<br>
+             - Merekap data operasional perusahaan</p>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">PT. Educa Sisfomedia Indonesia</h5>
+          <p class="card-text">Juli 2022 – Januari 2023<br>
+             - Developer Desain Front end programming mendesain rancangan website dengan responsif untuk mobile dan desktop<br>
+             - Menyelesaikan Project Desain Café RR Delima Pekanbaru</p>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Andre Ponsel (Kerja)</h5>
+          <p class="card-text">Agustus 2023 – September 2023<br>
+             - Perbaikan Mesin HP<br>
+             - Perbaikan LCD Handphone<br>
+             - Menginstalasi Handphone Android Yang Hank</p>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Toko Komputer Wincent</h5>
+          <p class="card-text">- Perbaikan laptop dan komputer<br>
+             - Service printer</p>
+        </div>
+      </div>
     </section>
-    <section id="certificates">
+
+    <section id="projects" class="container">
+      <h2>Proyek</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="Proyek/proyek1.jpg" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyek 1</h5>
+              <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tambahkan proyek lainnya di sini -->
+      </div>
+    </section>
+
+    <section id="certificates" class="container">
       <h2>Sertifikat</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
@@ -97,8 +136,9 @@
         <!-- Tambahkan sertifikat lainnya di sini -->
       </div>
     </section>
-    <section id="skills">
-      <h2>Skill</h2>
+
+    <section id="skills" class="container">
+      <h2>Keterampilan</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="card">
@@ -132,7 +172,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 mb-4">
+        <div class="col-md-6 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Bahasa</h5>
@@ -145,16 +185,14 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+
+    <section id="contact" class="container">
       <h2>Kontak</h2>
-      <p>Anda dapat menghubungi saya melalui email: <a href="mailto:ravy.teknik@gmail.com">ravy.teknik@gmail.com</a></p>
-      <p>
-        <a href="https://wa.me/6281293972566" class="btn btn-success">
-          <i class="bi bi-whatsapp"></i> Hubungi melalui WhatsApp
-        </a>
-      </p>
+      <p>Anda dapat menghubungi saya melalui email: ravy.teknik@gmail.com</p>
+      <p>Atau melalui WhatsApp: <a href="https://wa.me/6281293972566" class="btn btn-success"><i class="bi bi-whatsapp"></i> 0812 9397 2566</a></p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2024 Ravy Sholihin. All rights reserved.</p>
   </footer>

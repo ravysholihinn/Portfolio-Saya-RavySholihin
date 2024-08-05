@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="custom-header">
+  <header class="bg-dark text-white py-3">
     <div class="container">
-      <h1>Portofolio Ravy Sholihin</h1>
+      <h1 class="mb-0">Portofolio Ravy Sholihin</h1>
       <nav>
         <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certificates">Sertifikat</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">Tentang Saya</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#education">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#experience">Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#certificates">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Keterampilan</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Kontak</a></li>
         </ul>
       </nav>
     </div>
@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="Sertifikat/certificate1.png" class="card-img-top" alt="Sertifikat 1" data-toggle="modal" data-target="#certificate1Modal">
+            <img src="Sertifikat/HTML_CSS.png" class="card-img-top" alt="Sertifikat HTML dan CSS" data-toggle="modal" data-target="#certificate1Modal">
             <div class="card-body">
               <h5 class="card-title">Sertifikat Kelulusan Program Peningkatan Kompetensi</h5>
               <p class="card-text">Kelas "HTML dan CSS" di GAMELAB<br>7 Desember 2022</p>
@@ -70,61 +70,83 @@
         </div>
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="Sertifikat/certificate2.png" class="card-img-top" alt="Sertifikat 2" data-toggle="modal" data-target="#certificate2Modal">
+            <img src="Sertifikat/Frontend_WebDev.png" class="card-img-top" alt="Sertifikat Frontend WebDev" data-toggle="modal" data-target="#certificate2Modal">
             <div class="card-body">
               <h5 class="card-title">Sertifikat MSIB Angkatan 3 Kelas Industri Frontend WebDev</h5>
               <p class="card-text">PT. Educa Sisfomedia Indonesia<br>18 Agustus 2022 - 31 Desember 2022</p>
             </div>
           </div>
         </div>
-        <!-- Sertifikat lainnya ... -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="Sertifikat/SOLID.png" class="card-img-top" alt="Sertifikat SOLID" data-toggle="modal" data-target="#certificate3Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sertifikat Belajar Prinsip Pemrograman SOLID</h5>
+              <p class="card-text">Sertifikat ini mencakup pemahaman prinsip-prinsip SOLID dalam pemrograman<br>15 Januari 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="Sertifikat/Javascript_jQuery.png" class="card-img-top" alt="Sertifikat Javascript dan jQuery" data-toggle="modal" data-target="#certificate4Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sertifikat Javascript dan jQuery</h5>
+              <p class="card-text">Sertifikat kursus Javascript dan jQuery<br>20 Februari 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="Sertifikat/Berpikir_Kritis.png" class="card-img-top" alt="Sertifikat Berpikir Kritis" data-toggle="modal" data-target="#certificate5Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sertifikat Berpikir Kritis</h5>
+              <p class="card-text">Meningkatkan Kualitas Hidup dengan Berpikir Kritis<br>10 Maret 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="Sertifikat/Bootstrap_SASS.png" class="card-img-top" alt="Sertifikat Bootstrap dan SASS" data-toggle="modal" data-target="#certificate6Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sertifikat Bootstrap dan SASS</h5>
+              <p class="card-text">Sertifikat kursus Bootstrap dan SASS<br>5 April 2024</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="projects" class="mb-5">
-      <h2 class="border-bottom border-primary pb-2 mb-4">Proyek</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="Proyek/project1.png" class="card-img-top" alt="Proyek 1" data-toggle="modal" data-target="#project1Modal">
-            <div class="card-body">
-              <h5 class="card-title">Proyek 1</h5>
-              <p class="card-text">Deskripsi proyek 1.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="Proyek/project2.png" class="card-img-top" alt="Proyek 2" data-toggle="modal" data-target="#project2Modal">
-            <div class="card-body">
-              <h5 class="card-title">Proyek 2</h5>
-              <p class="card-text">Deskripsi proyek 2.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="Proyek/project3.png" class="card-img-top" alt="Proyek 3" data-toggle="modal" data-target="#project3Modal">
-            <div class="card-body">
-              <h5 class="card-title">Proyek 3</h5>
-              <p class="card-text">Deskripsi proyek 3.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="skills" class="mb-5">
+      <h2 class="border-bottom border-primary pb-2 mb-4">Keterampilan</h2>
+      <p><strong>Hard Skill:</strong><br>
+         - Microsoft Office<br>
+         - Teknisi Komputer<br>
+         - Teknisi Jaringan<br>
+         - Teknisi Handphone<br>
+         - Teknisi Printer<br>
+         - Website Programming</p>
+      <p><strong>Soft Skill:</strong><br>
+         - Kemampuan Manajemen Waktu<br>
+         - Komunikasi Interpersonal Yang Baik<br>
+         - Bekerja Secara Kolaboratif Dalam Tim<br>
+         - Pemecahan Masalah<br>
+         - Beradaptasi Dengan Perubahan Dan Menghadapi Tantangan Dengan Fleksibilitas<br>
+         - Bertanggung Jawab<br>
+         - Tidak mudah menyerah<br>
+         - Ketekunan Dan Ketelitian Dalam Menjalankan Tugas-Tugas Yang Diberikan</p>
+      <p><strong>Bahasa:</strong><br>
+         - Indonesia (Aktif)<br>
+         - Inggris (Pasif)</p>
     </section>
     <section id="contact">
       <h2 class="border-bottom border-primary pb-2 mb-4">Kontak</h2>
       <p>Anda dapat menghubungi saya melalui email: ravy.teknik@gmail.com</p>
-      <a href="https://wa.me/6281293972566" class="btn btn-success">
-        <i class="bi bi-whatsapp"></i> Hubungi melalui WhatsApp
-      </a>
     </section>
   </main>
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Ravy Sholihin. Semua hak dilindungi.</p>
+    <p>&copy; 2024 Ravy Sholihin. All rights reserved.</p>
   </footer>
 
-  <!-- Modal Sertifikat -->
+  <!-- Modal for Certificates -->
   <div class="modal fade" id="certificate1Modal" tabindex="-1" role="dialog" aria-labelledby="certificate1ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -135,56 +157,87 @@
           </button>
         </div>
         <div class="modal-body">
-          <img src="Sertifikat/certificate1.png" class="img-fluid" alt="Sertifikat 1">
+          <img src="Sertifikat/HTML_CSS.png" class="img-fluid" alt="Sertifikat Kelulusan Program Peningkatan Kompetensi">
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Proyek -->
-  <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal fade" id="certificate2Modal" tabindex="-1" role="dialog" aria-labelledby="certificate2ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="project1ModalLabel">Proyek 1</h5>
+          <h5 class="modal-title" id="certificate2ModalLabel">Sertifikat MSIB Angkatan 3 Kelas Industri Frontend WebDev</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <img src="Proyek/project1.png" class="img-fluid" alt="Proyek 1">
+          <img src="Sertifikat/Frontend_WebDev.png" class="img-fluid" alt="Sertifikat MSIB Angkatan 3 Kelas Industri Frontend WebDev">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal fade" id="certificate3Modal" tabindex="-1" role="dialog" aria-labelledby="certificate3ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="project2ModalLabel">Proyek 2</h5>
+          <h5 class="modal-title" id="certificate3ModalLabel">Sertifikat Belajar Prinsip Pemrograman SOLID</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <img src="Proyek/project2.png" class="img-fluid" alt="Proyek 2">
+          <img src="Sertifikat/SOLID.png" class="img-fluid" alt="Sertifikat Belajar Prinsip Pemrograman SOLID">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal fade" id="certificate4Modal" tabindex="-1" role="dialog" aria-labelledby="certificate4ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="project3ModalLabel">Proyek 3</h5>
+          <h5 class="modal-title" id="certificate4ModalLabel">Sertifikat Javascript dan jQuery</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <img src="Proyek/project3.png" class="img-fluid" alt="Proyek 3">
+          <img src="Sertifikat/Javascript_jQuery.png" class="img-fluid" alt="Sertifikat Javascript dan jQuery">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="certificate5Modal" tabindex="-1" role="dialog" aria-labelledby="certificate5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificate5ModalLabel">Sertifikat Berpikir Kritis</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Sertifikat/Berpikir_Kritis.png" class="img-fluid" alt="Sertifikat Berpikir Kritis">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="certificate6Modal" tabindex="-1" role="dialog" aria-labelledby="certificate6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificate6ModalLabel">Sertifikat Bootstrap dan SASS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Sertifikat/Bootstrap_SASS.png" class="img-fluid" alt="Sertifikat Bootstrap dan SASS">
         </div>
       </div>
     </div>

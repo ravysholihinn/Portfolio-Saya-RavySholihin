@@ -7,12 +7,15 @@ body {
 }
 
 header.custom-header {
-  background-color: #000; /* Black background */
+  background-color: #000; /* Latar belakang hitam */
 }
 
-header.custom-header h1, 
+header.custom-header h1 {
+  margin: 0;
+}
+
 nav .nav-link {
-  color: #fff; /* White text */
+  color: #fff; /* Teks putih */
 }
 
 section {
@@ -33,7 +36,7 @@ footer {
   width: 100%;
 }
 
-/* Optional: Additional custom styles */
+/* Tambahan gaya opsional untuk card */
 .card {
   border-radius: 8px;
 }

@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
 }
 
 header {
@@ -12,6 +13,8 @@ header {
 
 .card {
   margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-body {
@@ -42,4 +45,10 @@ header {
 
 #contact .btn {
   font-size: 1.2em;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
 }

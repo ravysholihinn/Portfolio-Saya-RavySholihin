@@ -1,77 +1,41 @@
-/* styles.css */
-
 /* Gaya untuk header */
 .custom-header {
-  background-color: #343a40; /* Warna latar belakang hitam */
-  color: white; /* Warna teks putih */
-  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem 0;
 }
 
 .custom-header h1 {
   margin: 0;
 }
 
-.custom-header .nav-link {
-  color: white !important; /* Warna link putih */
+/* Gaya untuk card */
+.card {
+  border: none;
 }
 
-/* Gaya untuk bagian konten utama */
-.main-content {
-  margin-top: 20px;
-}
-
-/* Gaya untuk card gambar */
 .card-img-top {
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-img-top:hover {
-  transform: scale(1.05); /* Zoom efek saat hover */
+  transform: scale(1.05);
 }
 
-/* Gaya untuk footer */
-footer {
-  background-color: #343a40; /* Warna latar belakang hitam */
-  color: white; /* Warna teks putih */
-}
-
-/* Gaya untuk tombol WhatsApp */
-.btn-success {
-  display: flex;
-  align-items: center;
-}
-
-.btn-success i {
-  margin-right: 5px;
-}
-
-/* Gaya modal */
+/* Gaya untuk modal */
 .modal-dialog {
   max-width: 80%;
 }
 
-.modal-body img {
-  width: 100%;
-  height: auto;
+.modal-content {
+  background-color: #f8f9fa;
 }
 
-/* Gaya responsif */
-@media (max-width: 768px) {
-  .custom-header {
-    text-align: center;
-  }
+.modal-header {
+  border-bottom: none;
+}
 
-  .nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
-  }
-
-  .card-img-top {
-    max-width: 100%;
-  }
+.modal-footer {
+  border-top: none;
 }

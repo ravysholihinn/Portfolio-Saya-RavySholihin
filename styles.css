@@ -62,14 +62,6 @@ footer p {
   cursor: pointer;
 }
 
-.skill img {
-  cursor: pointer;
-}
-
-.border-primary {
-  border-color: #007bff !important;
-}
-
 .bg-primary {
   background-color: #007bff !important;
 }
@@ -85,4 +77,8 @@ footer p {
 .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+}
+
+.border-primary {
+  border-color: #007bff !important;
 }

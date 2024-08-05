@@ -6,6 +6,15 @@ body {
   color: #333;
 }
 
+header.custom-header {
+  background-color: #000; /* Black background */
+}
+
+header.custom-header h1, 
+nav .nav-link {
+  color: #fff; /* White text */
+}
+
 section {
   background-color: #ffffff;
   padding: 2em;

@@ -13,6 +13,10 @@ header.custom-header {
 nav .nav-link {
   color: #fff;
 }
+.card-img-top {
+  height: 180px; /* Atur tinggi gambar */
+  object-fit: cover; /* Pastikan gambar menutupi area card dengan baik */
+}
 
 section {
   background-color: #ffffff;

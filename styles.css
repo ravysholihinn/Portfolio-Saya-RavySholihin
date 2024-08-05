@@ -37,4 +37,9 @@ header {
 
 #contact a {
   color: white;
+  text-decoration: none;
+}
+
+#contact .btn {
+  font-size: 1.2em;
 }

@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="Sertifikat/certificate1.png" class="card-img-top" alt="Sertifikat 1">
+            <img src="Sertifikat/certificate1.png" class="card-img-top" alt="Sertifikat 1" data-toggle="modal" data-target="#certificate1Modal">
             <div class="card-body">
               <h5 class="card-title">Sertifikat Kelulusan Program Peningkatan Kompetensi</h5>
               <p class="card-text">Kelas "HTML dan CSS" di GAMELAB<br>7 Desember 2022</p>
@@ -70,63 +70,47 @@
         </div>
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="Sertifikat/certificate2.png" class="card-img-top" alt="Sertifikat 2">
+            <img src="Sertifikat/certificate2.png" class="card-img-top" alt="Sertifikat 2" data-toggle="modal" data-target="#certificate2Modal">
             <div class="card-body">
               <h5 class="card-title">Sertifikat MSIB Angkatan 3 Kelas Industri Frontend WebDev</h5>
               <p class="card-text">PT. Educa Sisfomedia Indonesia<br>18 Agustus 2022 - 31 Desember 2022</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="Sertifikat/certificate3.png" class="card-img-top" alt="Sertifikat Mikrotik">
-            <div class="card-body">
-              <h5 class="card-title">Sertifikat Mikrotik</h5>
-              <p class="card-text">Deskripsi sertifikat Mikrotik.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="Sertifikat/certificate4.png" class="card-img-top" alt="Sertifikat SOLID">
-            <div class="card-body">
-              <h5 class="card-title">Sertifikat Belajar Prinsip Pemrograman SOLID</h5>
-              <p class="card-text">Deskripsi sertifikat SOLID.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="Sertifikat/certificate5.png" class="card-img-top" alt="Sertifikat Javascript dan Jquery">
-            <div class="card-body">
-              <h5 class="card-title">Sertifikat Javascript dan Jquery</h5>
-              <p class="card-text">Deskripsi sertifikat Javascript dan Jquery.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-         <img src="https://raw.githubusercontent.com/ravysholihinn/ravysholihinn.github.io/main/Sertifikat/Berpikir%20Kritis%20%20Meningkatkan%20Kualitas%20Hidup%20dengan%20berpikir%20kritis/BerpikirKritis%20%20Meningkatkan%20KualitasHidup%20denganberpikir%20kritis.png" class="card-img-top" alt="Sertifikat Berpikir Kritis">
-            <div class="card-body">
-              <h5 class="card-title">Sertifikat Berpikir Kritis</h5>
-              <p class="card-text">Meningkatkan Kualitas Hidup dengan Berpikir Kritis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="Sertifikat/certificate7.png" class="card-img-top" alt="Sertifikat Bootstrap dan SASS">
-            <div class="card-body">
-              <h5 class="card-title">Sertifikat Bootstrap dan SASS</h5>
-              <p class="card-text">Deskripsi sertifikat Bootstrap dan SASS.</p>
-            </div>
-          </div>
-        </div>
+        <!-- Sertifikat lainnya ... -->
       </div>
     </section>
     <section id="projects" class="mb-5">
       <h2 class="border-bottom border-primary pb-2 mb-4">Proyek</h2>
-      <!-- Daftar proyek yang telah dibuat dengan gambar -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Proyek/project1.png" class="card-img-top" alt="Proyek 1" data-toggle="modal" data-target="#project1Modal">
+            <div class="card-body">
+              <h5 class="card-title">Proyek 1</h5>
+              <p class="card-text">Deskripsi proyek 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Proyek/project2.png" class="card-img-top" alt="Proyek 2" data-toggle="modal" data-target="#project2Modal">
+            <div class="card-body">
+              <h5 class="card-title">Proyek 2</h5>
+              <p class="card-text">Deskripsi proyek 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Proyek/project3.png" class="card-img-top" alt="Proyek 3" data-toggle="modal" data-target="#project3Modal">
+            <div class="card-body">
+              <h5 class="card-title">Proyek 3</h5>
+              <p class="card-text">Deskripsi proyek 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h2 class="border-bottom border-primary pb-2 mb-4">Kontak</h2>
@@ -139,6 +123,73 @@
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 Ravy Sholihin. Semua hak dilindungi.</p>
   </footer>
+
+  <!-- Modal Sertifikat -->
+  <div class="modal fade" id="certificate1Modal" tabindex="-1" role="dialog" aria-labelledby="certificate1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificate1ModalLabel">Sertifikat Kelulusan Program Peningkatan Kompetensi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Sertifikat/certificate1.png" class="img-fluid" alt="Sertifikat 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Proyek 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Proyek/project1.png" class="img-fluid" alt="Proyek 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">Proyek 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Proyek/project2.png" class="img-fluid" alt="Proyek 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">Proyek 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Proyek/project3.png" class="img-fluid" alt="Proyek 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

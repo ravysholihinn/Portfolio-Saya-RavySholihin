@@ -57,7 +57,7 @@ header {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #0056b3; /* Efek hover biru gelap */
+  background-color: hsla(0, 0%, 56%, 0.925); /* Efek hover biru gelap */
   border-radius: 0.25rem;
 }
 

@@ -96,16 +96,38 @@ header {
   height: auto;
 }
 
-/* Styling untuk Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: linear-gradient(135deg, #00264d, #3399ff); /* Gradien biru tua ke biru cerah */
-  color: #fff; /* Warna teks putih untuk footer */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background: linear-gradient(135deg, #003366, #0099cc);
+  color: #ffffff; /* White text color */
+  padding: 2rem 0; /* Add vertical padding */
+  text-align: center; /* Center align text */
 }
+
+footer .container {
+  max-width: 960px; /* Adjust container width */
+  margin: 0 auto; /* Center align container */
+}
+
+footer .list-unstyled {
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+footer .list-unstyled li {
+  display: inline; /* Display list items inline */
+  margin: 0 10px; /* Add horizontal margin */
+}
+
+footer .list-unstyled a {
+  color: #ffffff; /* White color for links */
+  font-size: 2rem; /* Adjust icon size */
+  transition: color 0.3s; /* Add smooth transition effect */
+}
+
+footer .list-unstyled a:hover {
+  color: #adb5bd; /* Change color on hover */
+}
+
 
 /* Responsif untuk tampilan mobile */
 @media (max-width: 767.98px) {

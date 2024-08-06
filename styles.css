@@ -1,54 +1,89 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-}
+/* styles.css */
 
-header {
-  margin-bottom: 20px;
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .card {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-body {
-  padding: 20px;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-  margin-bottom: 15px;
-}
-
-.card-subtitle {
+  color: #007bff;
   font-weight: bold;
 }
 
-.card-img-top {
-  cursor: pointer;
-}
-
-.modal-body img {
-  max-width: 100%;
-  height: auto;
-}
-
-#contact a {
-  color: white;
-  text-decoration: none;
-}
-
-#contact .btn {
-  font-size: 1.2em;
+.card-text {
+  color: #6c757d;
 }
 
 footer {
   background-color: #343a40;
-  color: white;
-  padding: 20px;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  padding: 0.5rem 0;
+}
+
+section ul li::before {
+  content: '\2022';
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+/* Project modal styles */
+.modal-body img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
 }

@@ -43,22 +43,23 @@
 </header>
 
 <main class="container my-5">
-  <section id="about" class="mb-5">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <img src="foto_portpolio_saya/foto.jpg" alt="Foto Profil Ravy Sholihin" class="profile-img">
-          <div>
-            <h2 class="card-title">Tentang Saya</h2>
-            <p>Nama: Ravy Sholihin<br>
-               Kontak: +62812 9397 2566 | ravy.teknik@gmail.com<br>
-               Alamat: Jl. Suka karya perumahan graha bangun permai, blok A. No.16, Kota Pekanbaru<br>
-               Saya lulusan dari Perguruan Tinggi (d.h STMIK Amik Riau) Universitas Sains dan Teknologi Indonesia Pekanbaru pada Program Studi Sarjana Teknik Informatika dan mendapatkan predikat sangat memuaskan dengan IPK 3.55. Saya selalu berusaha untuk berkembang dalam hal pekerjaan, saya adalah pribadi yang memiliki integritas tinggi dan mempunyai keterampilan dalam hal yang berhubungan dengan IT dan saya mampu menangani perbaikan komputer dan laptop dari segi software dan hardware.</p>
-          </div>
+ <section id="about" class="mb-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <div class="d-flex align-items-center">
+        <img src="foto_portpolio_saya/foto.jpg" alt="Foto Profil Ravy Sholihin" class="profile-img" data-toggle="modal" data-target="#profileModal">
+        <div>
+          <h2 class="card-title">Tentang Saya</h2>
+          <p>Nama: Ravy Sholihin<br>
+             Kontak: +62812 9397 2566 | ravy.teknik@gmail.com<br>
+             Alamat: Jl. Suka karya perumahan graha bangun permai, blok A. No.16, Kota Pekanbaru<br>
+             Saya lulusan dari Perguruan Tinggi (d.h STMIK Amik Riau) Universitas Sains dan Teknologi Indonesia Pekanbaru pada Program Studi Sarjana Teknik Informatika dan mendapatkan predikat sangat memuaskan dengan IPK 3.55. Saya selalu berusaha untuk berkembang dalam hal pekerjaan, saya adalah pribadi yang memiliki integritas tinggi dan mempunyai keterampilan dalam hal yang berhubungan dengan IT dan saya mampu menangani perbaikan komputer dan laptop dari segi software dan hardware.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id="education" class="mb-5">
     <div class="card shadow-sm">
@@ -227,6 +228,22 @@
       </div>
       <div class="modal-body">
         <img src="sertifikat/berpikir-kritis.jpg" alt="Sertifikat Berpikir Kritis" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal untuk Gambar Profil -->
+<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">Foto Profil Ravy Sholihin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="foto_portpolio_saya/foto.jpg" alt="Foto Profil Ravy Sholihin" class="img-fluid">
       </div>
     </div>
   </div>

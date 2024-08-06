@@ -1,105 +1,96 @@
-/* styles.css */
-
-/* General styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
-  color: #343a40;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 20px;
 }
 
 .navbar {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .navbar-brand {
   font-weight: bold;
-  color: #007bff;
 }
 
-.navbar-nav .nav-link {
-  color: #343a40;
-  font-weight: 500;
+.nav-link {
+  margin: 0 10px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #007bff;
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
 .card {
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-  color: #007bff;
-  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.card-text {
-  color: #6c757d;
+.card-body {
+  padding: 1.25rem;
 }
 
 footer {
-  background-color: #343a40;
-  color: #ffffff;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Section styles */
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  color: #007bff;
-  font-weight: bold;
-  border-bottom: 3px solid #007bff;
-  padding-bottom: 0.5rem;
-}
-
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section ul li {
-  padding: 0.5rem 0;
-}
-
-section ul li::before {
-  content: '\2022';
-  color: #007bff;
-  font-weight: bold;
-  display: inline-block;
-  width: 1rem;
-  margin-left: -1rem;
-}
-
-/* Project modal styles */
-.modal-body img {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  position: relative;
+  bottom: 0;
   width: 100%;
+}
+
+.modal-content {
   border-radius: 0.5rem;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.25rem;
-  }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
-  .card-title {
-    font-size: 1.1rem;
-  }
+.border-primary {
+  border-color: #007bff !important;
+}
 
-  .card-text {
-    font-size: 0.9rem;
-  }
+.modal-body {
+  text-align: center;
+}
 
-  section h2 {
-    font-size: 1.5rem;
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+@media (max-width: 767.98px) {
+  .nav-link {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-item {
+    margin-left: 20px;
   }
 }

@@ -12,6 +12,20 @@
   display: inline-block;
   vertical-align: middle;
 }
+/* Keterampilan Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li strong {
+  color: #007bff;
+}
+
 
 /* Profil Gambar dan Informasi */
 .profile-img {

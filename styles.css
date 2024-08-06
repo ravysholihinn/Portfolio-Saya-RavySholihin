@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Styling untuk gambar logo di navbar */
 .logo {
   height: 10px; /* Atur tinggi gambar sesuai kebutuhan */
@@ -11,55 +12,18 @@
   display: inline-block;
   vertical-align: middle;
 }
-.profile-container {
-  display: flex;
-  align-items: flex-start; /* Agar gambar dan teks disejajarkan dengan baik */
-}
 
+/* Profil Gambar dan Informasi */
 .profile-img {
   border-radius: 50%;
-  width: 120px; /* Ukuran gambar bisa disesuaikan */
+  width: 120px;
   height: 120px;
   margin-right: 20px;
-  border: 3px solid #007bff; /* Border biru di sekitar gambar */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus di sekitar gambar */
+  border: 3px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.profile-info {
-  max-width: 600px; /* Batasi lebar teks */
-}
-
-.card-title {
-  margin-bottom: 20px;
-  font-size: 24px; /* Ukuran font judul */
-}
-
-.card-body {
-  padding: 20px; /* Jarak dalam card */
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f8f9fa;
-}
-.profile-container {
-  display: flex;
-  align-items: center;
-}
-
-.profile-img {
-  border-radius: 50%;
-  width: 100px; /* Ukuran gambar bisa disesuaikan */
-  height: 100px;
-  margin-right: 20px;
-  border: 3px solid #007bff; /* Tambahkan border jika diinginkan */
-}
-
-.card-title {
-  margin-bottom: 20px;
-}
-
+/* Navbar Styling */
 header {
   background-color: #007bff;
 }
@@ -83,25 +47,17 @@ header {
   border-radius: 0.25rem;
 }
 
-.main-container {
-  padding: 2rem;
-}
-
+/* Gaya Card dan Modal */
 .card {
   margin-bottom: 1.5rem;
 }
 
 .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
 }
 
 .card-body {
   padding: 1.25rem;
-}
-
-.border-primary {
-  border-color: #007bff !important;
 }
 
 .modal-content {
@@ -117,6 +73,7 @@ header {
   height: auto;
 }
 
+/* Styling untuk Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -127,6 +84,7 @@ footer {
   width: 100%;
 }
 
+/* Responsif untuk tampilan mobile */
 @media (max-width: 767.98px) {
   .navbar-nav .nav-link {
     padding: 0.5rem;

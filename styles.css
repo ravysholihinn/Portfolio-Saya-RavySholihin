@@ -11,6 +11,33 @@
   display: inline-block;
   vertical-align: middle;
 }
+.profile-container {
+  display: flex;
+  align-items: flex-start; /* Agar gambar dan teks disejajarkan dengan baik */
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 120px; /* Ukuran gambar bisa disesuaikan */
+  height: 120px;
+  margin-right: 20px;
+  border: 3px solid #007bff; /* Border biru di sekitar gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus di sekitar gambar */
+}
+
+.profile-info {
+  max-width: 600px; /* Batasi lebar teks */
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 24px; /* Ukuran font judul */
+}
+
+.card-body {
+  padding: 20px; /* Jarak dalam card */
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #333;

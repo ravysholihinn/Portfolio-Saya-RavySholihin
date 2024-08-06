@@ -46,9 +46,9 @@
   <section id="about" class="mb-5">
     <div class="card shadow-sm">
       <div class="card-body">
-        <div class="profile-container">
+        <div class="d-flex align-items-center">
           <img src="foto_portpolio_saya/foto.jpg" alt="Foto Profil Ravy Sholihin" class="profile-img">
-          <div class="profile-info">
+          <div>
             <h2 class="card-title">Tentang Saya</h2>
             <p>Nama: Ravy Sholihin<br>
                Kontak: +62812 9397 2566 | ravy.teknik@gmail.com<br>
@@ -75,22 +75,28 @@
     <div class="card shadow-sm">
       <div class="card-body">
         <h2 class="card-title">Pengalaman Magang/Kerja</h2>
-        <p>PT. Surya Karsa Mediaformasindo at PT. Chevron Pacific Indonesia<br>
-           September 2017 - Desember 2017<br>
-           - Bertanggung jawab dalam hal menginstalasi dan troubleshooting Telnet dan fiber optik<br>
-           - Merekap data operasional perusahaan</p>
-        <p>PT. Educa Sisfomedia Indonesia<br>
-           Juli 2022 – Januari 2023<br>
-           - Developer Desain Front end programming mendesain rancangan website dengan responsif untuk mobile dan desktop<br>
-           - Menyelesaikan Project Desain Café RR Delima Pekanbaru</p>
-        <p>Andre Ponsel (Kerja)<br>
-           Agustus 2023 – September 2023<br>
-           - Perbaikan Mesin HP<br>
-           - Perbaikan LCD Handphone<br>
-           - Menginstalasi Handphone Android Yang Hank</p>
-        <p>Toko Komputer Wincent<br>
-           - Perbaikan laptop dan komputer<br>
-           - Service printer</p>
+        <ul>
+          <li><strong>PT. Surya Karsa Mediaformasindo at PT. Chevron Pacific Indonesia</strong><br>
+              September 2017 - Desember 2017<br>
+              - Bertanggung jawab dalam hal menginstalasi dan troubleshooting Telnet dan fiber optik<br>
+              - Merekap data operasional perusahaan
+          </li>
+          <li><strong>PT. Educa Sisfomedia Indonesia</strong><br>
+              Juli 2022 – Januari 2023<br>
+              - Developer Desain Front end programming mendesain rancangan website dengan responsif untuk mobile dan desktop<br>
+              - Menyelesaikan Project Desain Café RR Delima Pekanbaru
+          </li>
+          <li><strong>Andre Ponsel (Kerja)</strong><br>
+              Agustus 2023 – September 2023<br>
+              - Perbaikan Mesin HP<br>
+              - Perbaikan LCD Handphone<br>
+              - Menginstalasi Handphone Android Yang Hank
+          </li>
+          <li><strong>Toko Komputer Wincent</strong><br>
+              - Perbaikan laptop dan komputer<br>
+              - Service printer
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -153,12 +159,16 @@
 
   <section id="skills" class="mb-5">
     <h2 class="border-bottom border-primary pb-2 mb-4">Keterampilan</h2>
-    <ul>
-      <li>Bahasa Pemrograman: JavaScript, Python, PHP, Java</li>
-      <li>Pengembangan Web: HTML, CSS, Bootstrap, React, Vue.js</li>
-      <li>Database: MySQL, PostgreSQL, MongoDB</li>
-      <li>Alat dan Teknologi: Git, Docker, Jenkins</li>
-    </ul>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <ul>
+          <li>Bahasa Pemrograman: JavaScript, Python, PHP, Java</li>
+          <li>Pengembangan Web: HTML, CSS, Bootstrap, React, Vue.js</li>
+          <li>Database: MySQL, PostgreSQL, MongoDB</li>
+          <li>Alat dan Teknologi: Git, Docker, Jenkins</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="mb-5">
@@ -166,7 +176,7 @@
     <div class="row">
       <!-- Proyek 1 -->
       <div class="col-md-4 mb-4">
-        <div class="card">
+        <div class="card shadow-sm">
           <img src="Proyek/project1.png" class="card-img-top" alt="Proyek 1" data-toggle="modal" data-target="#project1Modal">
           <div class="card-body">
             <h5 class="card-title">Proyek 1</h5>
@@ -176,7 +186,7 @@
       </div>
       <!-- Proyek 2 -->
       <div class="col-md-4 mb-4">
-        <div class="card">
+        <div class="card shadow-sm">
           <img src="Proyek/project2.png" class="card-img-top" alt="Proyek 2" data-toggle="modal" data-target="#project2Modal">
           <div class="card-body">
             <h5 class="card-title">Proyek 2</h5>
@@ -188,10 +198,14 @@
   </section>
 
   <section id="contact" class="mb-5">
-    <h2 class="border-bottom border-primary pb-2 mb-4">Kontak</h2>
-    <p>Email: ravy.teknik@gmail.com<br>
-       Telepon: +62812 9397 2566<br>
-       Alamat: Jl. Suka karya perumahan graha bangun permai, blok A. No.16, Kota Pekanbaru</p>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Kontak</h2>
+        <p>Email: ravy.teknik@gmail.com<br>
+           Telepon: +62812 9397 2566<br>
+           Alamat: Jl. Suka karya perumahan graha bangun permai, blok A. No.16, Kota Pekanbaru</p>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -212,6 +226,24 @@
       </div>
       <div class="modal-body">
         <img src="sertifikat/berpikir-kritis.jpg" alt="Sertifikat Berpikir Kritis" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Example modal for Project -->
+<div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Proyek 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="Proyek/project1.png" alt="Proyek 1" class="img-fluid">
+        <p>Deskripsi lengkap tentang Proyek 1.</p>
       </div>
     </div>
   </div>

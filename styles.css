@@ -4,7 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Styling untuk gambar logo di navbar */
+.logo {
+  height: 40px; /* Atur tinggi gambar sesuai kebutuhan */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 body {
   font-family: Arial, sans-serif;
   color: #333;

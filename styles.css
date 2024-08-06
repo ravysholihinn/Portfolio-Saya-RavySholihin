@@ -24,7 +24,7 @@ ul li {
 }
 
 ul li strong {
-  color: #007bff; /* Warna biru untuk highlight keterampilan */
+  color: #007bff;
 }
 
 /* Profil Gambar dan Informasi */
@@ -33,13 +33,13 @@ ul li strong {
   width: 120px;
   height: 120px;
   margin-right: 20px;
-  border: 3px solid #007bff; /* Warna border biru */
+  border: 3px solid #007bff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Styling */
 header {
-  background-color: #0056b3; /* Warna latar belakang navbar yang lebih gelap */
+  background: linear-gradient(135deg, #003366, #0099cc); /* Gradien biru laut ke biru muda */
 }
 
 .navbar {
@@ -47,30 +47,27 @@ header {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #fff; /* Warna teks putih untuk brand */
   font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link {
-  color: #e9ecef; /* Warna putih kehijauan untuk link */
+  color: #fff; /* Warna teks putih untuk link */
   padding: 0.5rem 1rem;
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #004494; /* Warna biru lebih gelap saat hover */
+  background-color: #0056b3; /* Efek hover biru gelap */
   border-radius: 0.25rem;
 }
 
 /* Gaya Card dan Modal */
 .card {
   margin-bottom: 1.5rem;
-  border: 1px solid #dee2e6; /* Warna border card */
-  border-radius: 0.5rem;
 }
 
 .card-title {
   font-size: 1.5rem;
-  color: #007bff; /* Warna biru untuk judul card */
 }
 
 .card-body {
@@ -94,8 +91,8 @@ header {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0056b3; /* Warna latar belakang footer yang lebih gelap */
-  color: #fff;
+  background: linear-gradient(135deg, #00264d, #3399ff); /* Gradien biru tua ke biru cerah */
+  color: #fff; /* Warna teks putih untuk footer */
   position: fixed;
   bottom: 0;
   width: 100%;

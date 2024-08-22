@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Ravy Sholihin</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/dist/font/bootstrap-icons.min.css">
@@ -14,6 +16,19 @@
 
   <div id="header"></div>
 <main class="container my-5">
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Jumlah Kunjungan Website</h5>
+            <p class="card-text">
+                Jumlah kunjungan saat ini adalah: <strong id="visitCount">0</strong>
+            </p>
+            <p>
+                Terakhir dikunjungi pada: <strong id="lastVisit">Belum ada kunjungan</strong>
+            </p>
+        </div>
+    </div>
+
   <div id="profile"></div>
   <div id="Riwayat_Pendidikan"></div>
   <div id="pengalaman_kerja"></div>
@@ -50,8 +65,45 @@
       loadHTML('model.html', 'model');
   });
 </script>
+<script>
+  // Function to get and update the visit count and last visit time
+  function updateVisitInfo() {
+      // Retrieve visit count from localStorage
+      let visitCount = localStorage.getItem('visitCount');
+      if (visitCount === null) {
+          visitCount = 0;
+      } else {
+          visitCount = parseInt(visitCount);
+      }
+
+      // Increment visit count
+      visitCount++;
+      localStorage.setItem('visitCount', visitCount);
+
+      // Update visit count display
+      document.getElementById('visitCount').textContent = visitCount;
+
+      // Get the current date and time
+      const now = new Date();
+      const formattedDate = now.toLocaleDateString('id-ID'); // Format date
+      const formattedTime = now.toLocaleTimeString('id-ID'); // Format time
+      const lastVisit = `Tanggal: ${formattedDate}, Waktu: ${formattedTime}`;
+
+      // Update last visit display
+      document.getElementById('lastVisit').textContent = lastVisit;
+
+      // Store last visit time in localStorage
+      localStorage.setItem('lastVisit', lastVisit);
+  }
+
+  // Call the function when the page loads
+  updateVisitInfo();
+</script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

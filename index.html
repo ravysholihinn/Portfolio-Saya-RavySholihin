@@ -23,12 +23,15 @@
             <p class="card-text">
                 Jumlah kunjungan saat ini adalah: <strong id="visitCount">0</strong>
             </p>
+            <p>
+                Terakhir dikunjungi pada: <strong id="lastVisit">Belum ada kunjungan</strong>
+            </p>
             <hr>
             <h6>Reset Hitungan Kunjungan</h6>
             <form id="resetForm">
                 <div class="form-group">
                     <label for="passwordInput">Masukkan Password:</label>
-                    <input type="password" id="passwordInput" class="form-control" placeholder="Masukkan password">
+                    <input type="password" id="passwordInput" class="form-control" placeholder="Masukkan password" required>
                 </div>
                 <button type="submit" class="btn btn-danger">Reset Hitungan</button>
             </form>
@@ -36,6 +39,7 @@
         </div>
     </div>
 </div>
+
   <div id="profile"></div>
   <div id="Riwayat_Pendidikan"></div>
   <div id="pengalaman_kerja"></div>
@@ -72,27 +76,77 @@
       loadHTML('model.html', 'model');
   });
 </script>
-<script>
+  <!-- JavaScript -->
+  <script>
+    // Function to update the visit count
+    function updateVisitCount() {
+        // Retrieve visit count from localStorage
+        let visitCount = localStorage.getItem('visitCount');
+        if (visitCount === null) {
+            visitCount = 0;
+        } else {
+            visitCount = parseInt(visitCount);
+        }
+
+        // Increment visit count
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
+
+        // Update visit count display
+        document.getElementById('visitCount').textContent = visitCount;
+    }
+
+    // Initialize the page
+    updateVisitCount();
+</script>   <script>
   const correctPassword = 'sayaravysholihin'; // Password yang benar untuk mereset
 
-  // Function to update the visit count
-  function updateVisitCount() {
+  // Function to format date and time
+  function formatDateTime(date) {
+      const options = {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false
+      };
+      return new Intl.DateTimeFormat('id-ID', options).format(date);
+  }
+
+  // Function to update the visit count and last visit time
+  function updateVisitInfo() {
       // Retrieve visit count from localStorage
       let visitCount = localStorage.getItem('visitCount');
+      let lastVisit = localStorage.getItem('lastVisit');
+
       if (visitCount === null) {
           visitCount = 0;
       } else {
           visitCount = parseInt(visitCount);
       }
 
+      // Increment visit count
+      visitCount++;
+      localStorage.setItem('visitCount', visitCount);
+
       // Update visit count display
       document.getElementById('visitCount').textContent = visitCount;
+
+      // Get the current date and time
+      const now = new Date();
+      const formattedDateTime = formatDateTime(now);
+      document.getElementById('lastVisit').textContent = formattedDateTime;
+
+      // Store last visit time in localStorage
+      localStorage.setItem('lastVisit', formattedDateTime);
   }
 
   // Function to reset the visit count
   function resetVisitCount() {
       localStorage.setItem('visitCount', 0);
-      updateVisitCount(); // Update display after reset
+      updateVisitInfo(); // Update display after reset
       document.getElementById('resetMessage').textContent = 'Hitungan kunjungan telah direset.';
   }
 
@@ -109,8 +163,9 @@
   });
 
   // Initialize the page
-  updateVisitCount();
+  updateVisitInfo();
 </script>
+
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
